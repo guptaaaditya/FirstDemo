@@ -42,4 +42,13 @@ public class HelloTestController {
 		stud.setLastname("Kumar");
 		return stud;
 	}
+	
+	@RequestMapping(value="/student-firstname", method = RequestMethod.GET)
+	public StudentBO getStudentByFirstName(@RequestParam("firstname") String firstName) {
+		StudentBO student = new StudentBO();
+		student.setId(105);
+		student.setFirstname(firstName);
+		student.setLastname("Gupta");
+		return student;
+	}
 }
