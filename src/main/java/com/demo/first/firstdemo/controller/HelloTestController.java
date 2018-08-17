@@ -1,5 +1,7 @@
 package com.demo.first.firstdemo.controller;
 
+import java.util.ArrayList;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -50,5 +52,15 @@ public class HelloTestController {
 		student.setFirstname(firstName);
 		student.setLastname("Gupta");
 		return student;
+	}
+	
+	@RequestMapping(value="/allstudent", method = RequestMethod.GET)
+	public List<StudentBO> getAllStudent(){
+		List<StudentBO> students = new ArrayList<StudentBO>();
+		StudentBO s1 = new StudentBO();
+		students.add(s1);
+		StudentBO s2 = new StudentBO();
+		students.add(s2);
+		return students;
 	}
 }
