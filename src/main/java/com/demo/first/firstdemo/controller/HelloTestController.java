@@ -63,4 +63,8 @@ public class HelloTestController {
 		students.add(s2);
 		return students;
 	}
+	public StudentBO deleteStudent(StudentBO student) {
+		StudentBO student1=new StudentBO();
+		return student1;
+	}
 }
