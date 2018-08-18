@@ -75,4 +75,7 @@ public class HelloTestController {
 	public StudentBO test3() {
 		return new StudentBO();
 	}
+	public StudentBO test4() {
+		return new StudentBO();
+	}
 }
