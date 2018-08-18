@@ -68,7 +68,11 @@ public class HelloTestController {
 		return student1;
 	}
 	
-	public StudentBO test() {
+	
+	public StudentBO test2() {
+		return new StudentBO();
+	}
+	public StudentBO test3() {
 		return new StudentBO();
 	}
 }
