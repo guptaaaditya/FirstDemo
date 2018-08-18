@@ -67,4 +67,8 @@ public class HelloTestController {
 		StudentBO student1=new StudentBO();
 		return student1;
 	}
+	
+	public StudentBO test() {
+		return new StudentBO();
+	}
 }
