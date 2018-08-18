@@ -4,6 +4,15 @@ public class StudentBO {
 	private int id;
 	private String firstname;
 	private String lastname;
+	private String email;
+	private long no;
+	
+	public void setEmail(){
+		this.email=email;
+	}
+	public String getEmail(String email) {
+		return email;
+	}
 
 	public int getId() {
 		return id;
